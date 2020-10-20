@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<!--
+Mateo Shkurti
+Student ID: 991570115
+Syst10199- Web Programming
+-->
+<html>
+    <head>
+        <title>Rock-Paper-Scissors</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <div><h2>Rock-Paper-Scissors</h2></div>
+        <div class="g">
+            <input type="button" value="PLAY!!!" onclick="game()">
+        </div>
+        <div>
+            <input type="button" value="Go Back" onclick="window.location.href = 'index.html'" >
+        </div>
+
+        <script>
+            function game() {
+                var reply=false;
+                var choice1 = parseInt(prompt("Choose between \n\
+                                                        1=rock,\n\
+                                                        2=paper,\n\
+                                                        3=scissors.\n\
+                                            Please put in a numeric value"));
+                var choice2 = parseInt(Math.random() * 4);
+                var count = 0;
+                var loss = 0;
+                var draw = 0;
+                if (choice1 == 1) {
+                    if (choice2 == 3) {
+                        alert("Com chose Scissors");
+                        alert("You won!!");
+                        count++;
+                    } else if (choice2 == 1) {
+                        alert("Com chose Rock");
+                        alert("Draw!");
+                        draw++;
+                    } else {
+                        alert("Com chose Paper");
+                        alert("You lost!");
+                    }
+                    loss++;
+                } else if (choice1 == 2) {
+                    if (choice2 == 1) {
+                        alert("Com chose Rock");
+                        alert("You won!!");
+                        count++;
+                    } else if (choice2 == 2) {
+                        alert("Com chose Paper");
+                        alert("Draw!");
+                        draw++;
+                    } else {
+                        alert("Com chose Scissors");
+                        alert("You lost!");
+                        loss++;
+                    }
+                } else if (choice1 == 3) {
+                    if (choice2 == 2) {
+                        alert("Com chose Paper");
+                        alert("You won!!");
+                        count++;
+                    } else if (choice2 == 3) {
+                        alert("Com chose Scissors");
+                        alert("Draw!");
+                        draw++;
+                    } else {
+                        alert("Com chose Rock");
+                        alert("You lost!");
+                        loss++;
+                    }
+                } else {
+
+                    while (choice1 > 3) {
+                        alert("Invalid Input");
+
+                        var choice1 = parseInt(prompt("Choose between \n\
+                                                        1=rock,\n\
+                                                        2=paper,\n\
+                                                        3=scissors.\n\
+                                            Please put in a numeric value"));
+                        var choice2 = parseInt(Math.random() * 4);
+                        if (choice1 == 1) {
+                            if (choice2 == 3) {
+                                alert("Com chose Scissors");
+                                alert("You won!!");
+                                count++;
+                            } else if (choice2 == 1) {
+                                alert("Com chose Rock");
+                                alert("Draw!");
+                                draw++;
+                            } else {
+                                alert("Com chose Paper");
+                                alert("You lost!");
+                                loss++;
+                            }
+                        } else if (choice1 == 2) {
+                            if (choice2 == 1) {
+                                alert("Com chose Rock");
+                                alert("You won!!");
+                                count++;
+                            } else if (choice2 == 2) {
+                                alert("Com chose Paper");
+                                alert("Draw!");
+                                draw++;
+                            } else {
+                                alert("Com chose Scissors");
+                                alert("You lost!");
+                                loss++;
+                            }
+                        } else if (choice1 == 3) {
+                            if (choice2 == 2) {
+                                alert("Com chose Paper");
+                                alert("You won!!");
+                                count++;
+                            } else if (choice2 == 3) {
+                                alert("Com chose Scissors");
+                                alert("Draw!");
+                                draw++;
+                            } else {
+                                alert("Com chose Rock");
+                                alert("You lost!");
+                                loss++;
+                            }
+                        }
+
+                    }
+                }
+
+               
+            
+             reply = confirm("Do you want to play again?");
+
+            if (reply == true) {
+                while (reply == true) {
+                    var choice1 = parseInt(prompt("Choose between \n\
+                                                        1=rock,\n\
+                                                        2=paper,\n\
+                                                        3=scissors.\n\
+                                            Please put in a numeric value"));
+                    var choice2 = parseInt(Math.random() * 4);
+                    if (choice1 == 1) {
+                        if (choice2 == 3) {
+                            alert("Com chose Scissors");
+                            alert("You won!!");
+                            count++;
+                        } else if (choice2 == 1) {
+                            alert("Com chose Rock");
+                            alert("Draw!");
+                            draw++;
+                        } else {
+                            alert("Com chose Paper");
+                            alert("You lost!");
+                            loss++;
+                        }
+                    } else if (choice1 == 2) {
+                        if (choice2 == 1) {
+                            alert("Com chose Rock");
+                            alert("You won!!");
+                            count++;
+                        } else if (choice2 == 2) {
+                            alert("Com chose Paper");
+                            alert("Draw!");
+                            draw++;
+                        } else {
+                            alert("Com chose Scissors");
+                            alert("You lost!");
+                            loss++;
+                        }
+                    } else if (choice1 == 3) {
+                        if (choice2 == 2) {
+                            alert("Com chose Paper");
+                            alert("You won!!");
+                            count++;
+                        } else if (choice2 == 3) {
+                            alert("Com chose Scissors");
+                            alert("Draw!");
+                            draw++;
+                        } else {
+                            alert("Com chose Rock");
+                            alert("You lost!");
+                            loss++;
+                        }
+                    } else {
+
+                        while (choice1 > 3) {
+                            alert("Invalid Input");
+
+                            var choice1 = parseInt(prompt("Choose between \n\
+                                                        1=rock,\n\
+                                                        2=paper,\n\
+                                                        3=scissors.\n\
+                                            Please put in a numeric value"));
+                            var choice2 = parseInt(Math.random() * 4);
+                            if (choice1 == 1) {
+                                if (choice2 == 3) {
+                                    alert("Com chose Scissors");
+                                    alert("You won!!");
+                                    count++;
+                                } else if (choice2 == 1) {
+                                    alert("Com chose Rock");
+                                    alert("Draw!");
+                                    draw++;
+                                } else {
+                                    alert("Com chose Paper");
+                                    alert("You lost!");
+                                    loss++;
+                                }
+                            } else if (choice1 == 2) {
+                                if (choice2 == 1) {
+                                    alert("Com chose Rock");
+                                    alert("You won!!");
+                                    count++;
+                                } else if (choice2 == 2) {
+                                    alert("Com chose Paper");
+                                    alert("Draw!");
+                                    draw++;
+                                } else {
+                                    alert("Com chose Scissors");
+                                    alert("You lost!");
+                                    loss++;
+                                }
+                            } else if (choice1 == 3) {
+                                if (choice2 == 2) {
+                                    alert("Com chose Paper");
+                                    alert("You won!!");
+                                    count++;
+                                } else if (choice2 == 3) {
+                                    alert("Com chose Scissors");
+                                    alert("Draw!");
+                                    draw++;
+                                } else {
+                                    alert("Com chose Rock");
+                                    alert("You lost!");
+                                    loss++;
+                                }
+                            }
+
+                        }
+                    }
+
+                    var reply = confirm("Do you want to play again?");
+                }
+            }
+
+            alert("        Win count is: " + count + " \n\
+                    Draw count is: " + draw + " \n\
+                         Loss count is: " + loss);
+            alert("Thank you for playing!!")
+
+            }
+
+        </script> 
+    </body>
+</html>
